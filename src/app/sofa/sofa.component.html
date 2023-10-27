@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="sofa">
+        <div class="sofa-child">
+            <div class="outer-child">
+                <div class="sofa-content">
+                    <h2>{{currentTitle}}</h2>
+                    <p>{{currentContent}}</p>
+                    <h3>-280 $</h3>
+                    <div class="sofa-colors">
+                        <div class="one" (click)="changeImage(1)"></div>
+                        <div class="two" (click)="changeImage(2)"></div>
+                        <div class="three" (click)="changeImage(3)"></div>
+                    </div>
+                    <div class="btn-text">
+                        <button class="gbl-btn">ADD TO CART</button>
+                        <p>View All Product</p>
+                    </div>
+                </div>
+                <div class="sofa-logo">
+                    <img [src]="currentImage" alt="sofa">
+                </div>
+            </div>
+            <div class="arrows">
+                <img src="../../assets/left.png" alt="" width="18px" (click)="navigateLeft()">
+                <img src="../../assets/line.png" alt="" width="18px">
+                <img src="../../assets/right.png" alt="" width="18px" (click)="navigateRight()">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="parent">
+        <section class="child">
+            <div class="inner-child">
+                <div class="left-child">
+                    <div class="colors">
+                        <span>Color</span>
+                        <div class="circle-row">
+                            <div class="circle blue"></div>
+                            <div class="circle green"></div>
+                            <div class="circle red"></div>
+                            <div class="circle orange"></div>
+                        </div>
+                        <div class="circle-row">
+                            <div class="circle purple"></div>
+                            <div class="circle pink"></div>
+                            <div class="circle yellow"></div>
+                            <div class="circle teal"></div>
+                        </div>
+                    </div>
+                    <div class="filters">
+                        <p>Filter</p>
+                        <div class="filter-items">
+                            <p>Materials</p>
+                            <div class="wrapper">
+                                <div>
+                                    <span>Metal</span>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div>
+                                    <span>Wooden</span>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div>
+                                    <span>Fabric</span>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div> <span>Foam</span>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+
+                                <div>
+                                    <span>Natural Skin</span>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div>
+                                    <span>Synthetic fiber</span>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>Price</p>
+                        <input type="range" name="" id="">
+                    </div>
+                    <div class="newin">
+                        <p>newin</p>
+                    </div>
+                    <div class="saleoff">
+                        <p>sales off</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-child">
+                        <div class="box" *ngFor="let card of cards">
+                            <button class="new gbl-btn">New</button>
+                            <img class="im" src={{card.img}} alt="">
+                            <div class="tags">
+                                <div class="like"><img src="../../assets/like.png" alt=""></div>
+                                <div class="cart"><img src="../../assets/cart.svg" alt=""></div>
+                                <div class="eye"><img src="../../assets/eye-open.png" alt=""></div>
+                            </div>
+                            <p>Patio Arm Chair</p>
+                            <h3>150 $</h3>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="gbl-btn">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #F29544;
+    position: relative;
+
+    .child-footer {
+        max-width: 1368px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .footer-content {
+                display: flex;
+                width: 100%;
+                justify-content: space-evenly;
+                color: white;
+                font-size: 14px;
+                gap: 15%;
+                padding: 80px;
+
+                .footer-side {
+                    display: flex;
+                    gap: 60px;
+                }
+
+                h2 {
+                    margin-bottom: 20px;
+                }
+
+                .footer-1 {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    .footer-logo img {
+                        filter: brightness(0%) saturate(0) grayscale(50%) invert(100%);
+                    }
+
+                    .footer-text {
+                        p {
+                            font-size: 16px;
+                            font-weight: normal;
+                            color: white;
+                            width: 373px;
+                            margin-top: -30px;
+                        }
+                    }
+
+                    .social {
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 83px;
+
+                        img:hover {
+                            cursor: pointer;
+                        }
+
+                        img {
+                            filter: brightness(0%) saturate(0) grayscale(100%) invert(100%);
+                        }
+                    }
+                }
+            }
+
+            .footer-2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .footer-3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .footer-4 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.copy {
+    position: absolute;
+    top: 87%;
+    color: white;
+    left: 36%;
+    font-size: 14px;
+}
+
+@media(min-width:1180px) and (max-width:1530px) {
+    .footer {
+        width: 1450px;
+    }
+}
+
+@media(min-width:2560px) {
+    .footer {
+        height: 350px;
+    }
+
+    .copy {
+        left: 41%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .footer {
+        width: 1420px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer {
+        width: 1300px;
+    }
+}
+
+@media(max-width:767px) {
+    .footer {
+        width: 1250px;
+        height: 800px;
+    }
+
+    .copy {
+        top: 91%;
+        font-size: 30px;
+        left: 14%;
+        padding: 20px;
+    }
+
+    .hide {
+        display: none !important;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+
+        .footer-side {
+            justify-content: space-between;
+
+
+
+            .footer-2,
+            .footer-3 {
+                h2 {
+                    font-size: 45px;
+                }
+
+                p {
+                    font-size: 35px;
+                }
+            }
+        }
+
+        .footer-1 {
+            gap: 40px;
+            align-items: center;
+
+
+            .footer-logo {
+
+
+                img {
+                    width: 400px;
+                }
+            }
+
+            .footer-text {
+                p {
+                    text-align: center;
+                    font-size: 35px !important;
+                    width: 800px !important;
+                }
+            }
+
+            .social {
+                gap: 60px;
+                margin-left: -100px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

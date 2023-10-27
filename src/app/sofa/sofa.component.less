@@ -1,0 +1,155 @@
+.sofa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+    max-height: 638px;
+    height: 450px;
+
+    .sofa-child {
+        max-width: 1368px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-left: 3%;
+        position: relative;
+
+        .arrows {
+            position: absolute;
+            top: 90%;
+            right: 6%;
+
+            img:hover {
+                cursor: pointer;
+            }
+        }
+
+
+        .outer-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+
+
+            .sofa-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 300px;
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #616161;
+                    margin-top: 15px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                    margin-top: 15px;
+                }
+
+                .sofa-colors {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                    width: 80px;
+
+                    .one {
+                        background-color: red;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        transition: transform 0.2s;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.2);
+                            border: 1px solid black;
+                        }
+                    }
+
+                    .two {
+                        background-color: green;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        transition: transform 0.2s;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.2);
+                            border: 1px solid black;
+                        }
+                    }
+
+                    .three {
+                        background-color: rgb(22, 157, 202);
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        transition: transform 0.2s;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.2);
+                            border: 1px solid black;
+                        }
+                    }
+                }
+
+                .btn-text {
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        color: #AAAAAA;
+                        display: 16px;
+                    }
+                }
+            }
+
+            .sofa-logo img {
+                max-width: 891px;
+                width: 600px;
+            }
+        }
+    }
+}
+
+@media(min-width:1180px) and (max-width:1530px) {
+    .sofa {
+        width: 1470px;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .sofa {
+        width: 1420px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .sofa {
+        width: 1300px;
+    }
+}
+
+@media(max-width:767px) {
+    .sofa {
+        display: none;
+    }
+
+    .arrows {
+        display: none;
+    }
+}

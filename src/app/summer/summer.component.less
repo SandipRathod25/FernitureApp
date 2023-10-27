@@ -1,0 +1,240 @@
+.summer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .child-summer {
+        max-width: 1368px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-left: 3%;
+        position: relative;
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .summer-content {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                .card-items {
+                    position: relative;
+
+                    .sale {
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: orange;
+                        text-align: center;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        color: white;
+                        top: 10px;
+                        right: 10px;
+                        font-size: 12px;
+                        padding: 20px;
+                    }
+
+                    .sale-items {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        box-shadow: 0px 10px 30px #0000001A;
+                        padding: 20px;
+
+                        h2 {
+                            margin-top: 10px;
+                        }
+
+                        button {
+                            margin-top: 30px;
+                            width: 120px;
+                            height: 40px;
+                        }
+
+                        img {
+                            max-width: 418px;
+                            width: 300px;
+                            max-height: 556px;
+                            height: 280px
+                        }
+                    }
+
+                    .background {
+                        position: absolute;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+
+                        .txt {
+                            position: absolute;
+                            left: 28%;
+                            top: 40%;
+
+                        }
+
+                        img {
+                            width: 600px;
+                        }
+
+                        h2 {
+                            margin-bottom: 20px;
+
+                        }
+
+                        .underline-spacing {
+                            display: inline-block;
+                            position: relative;
+                        }
+
+                        .underline-spacing::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -8px;
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            background-color: orange;
+                        }
+
+                        p {
+                            color: orange;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .arrows {
+            position: absolute;
+            top: 110%;
+            left: 0;
+
+            img:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// .arrow {
+//     display: none;
+// }
+
+@media(max-width:1440px) {
+    .background {
+
+        img {
+            max-width: 550px;
+        }
+    }
+}
+
+@media(min-width:2560px) {
+    .background {
+        img {
+            min-width: 800px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .summer {
+        width: 950px;
+    }
+
+    .background {
+        img {
+            margin-left: -60px;
+            margin-top: 50px;
+            max-width: 480px;
+        }
+    }
+
+    .img2 {
+        z-index: 1;
+    }
+}
+
+@media(max-width:767px) {
+
+    .hide {
+        display: none;
+    }
+
+    .child-summer {
+        .arrows {
+            img {
+                width: 60px;
+            }
+
+            width: 180px;
+            left: 210% !important;
+        }
+    }
+
+    .item {
+        button {
+            width: 350px !important;
+            height: auto !important;
+            font-size: 40px !important;
+            padding: 30px !important;
+        }
+    }
+
+    .summer-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 180px;
+
+        .saleitem {
+            margin-left: 20px;
+
+        }
+
+        .card {
+            width: 850px !important;
+
+
+            .sale {
+                font-size: 40px !important;
+                width: 110px !important;
+                height: 110px !important;
+                padding: 40px !important;
+            }
+
+            img {
+                width: 600px !important;
+                height: 600px !important;
+            }
+
+            p,
+            h2 {
+                font-size: 45px;
+            }
+        }
+
+        .background {
+            position: relative !important;
+            font-size: 50px;
+            margin-top: -100px;
+
+            .txt {
+                width: 800px !important;
+                margin-left: -300px !important;
+            }
+        }
+    }
+}

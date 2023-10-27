@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="summer">
+        <div class="child-summer">
+            <div class="box">
+                <div class="summer-content">
+                    <div *ngFor="let card of showCards; let i = index" class="card-items">
+                        <div class="card">
+                            <div class="sale">SALE <br>{{ card.sale }}</div>
+                            <div class="sale-items">
+                                <img [src]="card.imageSrc" alt="">
+                                <p>{{ card.productName }}</p>
+                                <h2>{{ card.productPrice }}</h2>
+                                <button class="gbl-btn">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sale-items saleitem">
+                        <div class="card-items">
+                            <div class="background">
+                                <div class="txt">
+                                    <h2>Summer Sale</h2>
+                                    <p class="underline-spacing">Shop Now</p>
+                                </div>
+                                <img src="../../assets/depositphotos_-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <img src="../../assets/left.png" alt="" width="18px" (click)="prevCard()">
+                <img src="../../assets/line.png" alt="" width="18px">
+                <img src="../../assets/right.png" alt="" width="18px" (click)="nextCard()">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

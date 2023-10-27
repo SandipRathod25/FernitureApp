@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <section class="hero">
+            <div class="inner-hero">
+                <section class="hero-left">
+                    <div class="main-text">
+                        <h2>NEW ARRIVALS</h2>
+                    </div>
+                    <div class="sub-text">
+                        <h1>Forma Milkyway <br> Ivory Chair</h1>
+                    </div>
+                    <div class="gbl-btn">SHOP NOW</div>
+                    <div class="social">
+                        <img src="../../assets/facebook.svg" alt="facebook">
+                        <img src="../../assets/instagram.svg" alt="instagram" class="imga">
+                        <img src="../../assets/pinterest.svg" alt="pintrest" class="imga">
+                    </div>
+                </section>
+                <section class="hero-right">
+                    <div class="images">
+                        <img [src]="currentImage" alt="chair">
+                    </div>
+                    <div class="counting">
+                        <p (click)="changeImage(1)">01</p>
+                        <p (click)="changeImage(2)">02</p>
+                        <p (click)="changeImage(3)">03</p>
+                        <p (click)="changeImage(4)">04</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <section class="navbar-main">
+            <nav class="navbar">
+                <div class="menubar">
+                    <img src="../../assets/menu.svg" alt="" (click)="toggleMenu()" *ngIf="show_cross==false">
+                    <img src="../../assets/cross.png" alt="" (click)="toggleMenu()" *ngIf="show_cross==true">
+
+                </div>
+                <div class="navbar-left">
+                    <div class="logo"><img src="../../assets/Logo.svg" alt="logo"></div>
+                </div>
+                <div class="navbar-center">
+                    <ul>
+                        <li (click)="toggleOn()">Our Offer</li>
+                        <li>Bedroom</li>
+                        <li>Kitchen & Dining</li>
+                    </ul>
+                </div>
+                <div class="navbar-right">
+                    <img src='../../assets/search.svg' alt="search" class="hide">
+                    <img src='../../assets/cart.svg' alt="cart">
+                    <img src='../../assets/profile.svg' alt="user">
+                </div>
+            </nav>
+            <section class="popup" *ngIf="toggle==true">
+                <div class="left">
+                    <h2>Categories</h2>
+                    <p>Living Room Furniture</p>
+                    <p>Nursery Furniture</p>
+                    <p>Bedroom Furniture</p>
+                    <p>Kitchen & Dining Furniture</p>
+                    <p>Home Office Furniture</p>
+                </div>
+                <div class="right">
+                    <h2>Featured</h2>
+                    <p>Furniture Deals</p>
+                    <p>Furniture Deals</p>
+                    <p>Furniture Deals</p>
+                    <p>Dorm Furniture</p>
+                </div>
+            </section>
+            <section class="mobile" *ngIf="menu==true">
+                <div class="offer">
+                    <h2>Our offer</h2>
+                    <div class="category">
+                        <h2>Categories</h2>
+                        <div class="ce">
+                            <p>Living Room Furniture</p>
+                            <p>Nursery Furniture</p>
+
+                            <p>Bedroom Furniture</p>
+
+                            <p>Kitchen & Dining Furniture</p>
+
+                            <p>Home Office Furniture</p>
+
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <h2>Featured</h2>
+                        <div class="fe">
+                            <p>Furniture Deals</p>
+                            <p>Furniture Deals</p>
+                            <p>Furniture Deals</p>
+                            <p>Dorm Furniture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer">
+                    <div class="bedroom">
+                        <h2>Bedroom</h2>
+                    </div>
+                    <div class="kitchen">
+                        <h2>Kitchen & Dining</h2>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </div>
+</body>
+
+</html>
